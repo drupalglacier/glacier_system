@@ -1,7 +1,7 @@
 name = System
 core = 7.x
 package = glacier
-version = 7.x-2.0
+version = 7.x-1.0
 project = glacier_system
 dependencies[] = ctools
 dependencies[] = features
