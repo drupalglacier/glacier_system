@@ -13,7 +13,5 @@ features[features_api][] = api:2
 features[field_base][] = body
 features[field_base][] = field_order
 features[field_base][] = title_field
-features[filter][] = filtered_html
-features[filter][] = full_html
 features[image][] = glacier_system_lightbox
 features[image][] = glacier_system_thumbnail
