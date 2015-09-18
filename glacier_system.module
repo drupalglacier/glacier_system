@@ -50,6 +50,20 @@ function glacier_system_update_bower_dependencies($modules = NULL) {
   }
 }
 
+/**
+ * Implements hook_form_alter().
+ */
+function glacier_system_form_field_ui_display_overview_form_alter(&$form, &$form_state, $form_id) {
+  if (isset($form['additional_settings']) && isset($form['additional_settings']['ds_layouts'])) {
+    foreach ($form['additional_settings']['ds_layouts']['layout']['#options'] as $key => $option) {
+      // Remove "fluid" display suite layouts, with glacier every layout is fluid.
+      if (strpos($key, 'fluid') !== FALSE) {
+        unset($form['additional_settings']['ds_layouts']['layout']['#options'][$key]);
+      }
+    }
+  }
+}
+
 function _glacier_system_update_bower_dependencies_extend_file($source_file, $target_file) {
   $source_json_array = json_decode(file_get_contents($source_file), TRUE);
   $target_json_array = json_decode(file_get_contents($target_file), TRUE);
