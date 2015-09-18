@@ -64,6 +64,8 @@ function glacier_system_form_field_ui_display_overview_form_alter(&$form, &$form
   }
 
   if (isset($form['fields']['title_field'])) {
+    // Remove the display suite title field if the title field
+    // from the "title" Drupal module, is already active.
     unset($form['fields']['title']);
     unset($form['#ds_fields'][0]);
   }
