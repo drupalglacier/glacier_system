@@ -1,0 +1,8 @@
+<?php
+
+function glacier_system_install() {
+  db_update('system')
+    ->fields(array('weight' => 1000))
+    ->condition('name', 'glacier_system', '=')
+    ->execute();
+}
