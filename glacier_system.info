@@ -3,6 +3,7 @@ core = 7.x
 package = glacier
 version = 7.x-1.0
 project = glacier_system
+dependencies[] = bower_manager
 dependencies[] = ctools
 dependencies[] = features
 dependencies[] = image
