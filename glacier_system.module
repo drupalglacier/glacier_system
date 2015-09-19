@@ -14,12 +14,21 @@ include_once 'glacier_system.features.inc';
 function glacier_system_theme_registry_alter(&$theme_registry) {
   if (!path_is_admin(current_path())) {
     $glacier_system_directory = drupal_get_path('module', 'glacier_system');
+    // All features that extend glacier must be placed inside the "features" directory.
     $glacier_features_directory = $glacier_system_directory . '/features';
+    // Get all features from the features directory.
     $glacier_features_paths = array_filter(glob($glacier_features_directory . '/*'), 'is_dir');
     foreach ($glacier_features_paths as $path) {
       $template_path = $path . '/templates';
       if (is_dir($template_path)) {
-        $theme_registry += drupal_find_theme_templates($theme_registry, '.tpl.php', $template_path);
+        // Find template files.
+        $impementations = drupal_find_theme_templates($theme_registry, '.tpl.php', $template_path);
+        foreach ($impementations as $key => $impementation) {
+          // Add a "type" to prevent an error with the theme() function.
+          $impementations[$key]['type'] = 'module';
+        }
+        // Add template files to the theme registry.
+        $theme_registry += $impementations;
       }
     }
   }
