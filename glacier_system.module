@@ -7,17 +7,19 @@
 include_once 'glacier_system.features.inc';
 
 /**
- * Tell Drupal to also look for template files in glacier module folders.
+ * Tell Drupal to also look for template files in glacier features.
  *
  * Implements hook_theme_registry_alter().
  */
 function glacier_system_theme_registry_alter(&$theme_registry) {
   if (!path_is_admin(current_path())) {
-    $modules = module_list();
-    foreach ($modules as $module) {
-      if (_glacier_system_starts_with($module, 'glacier_')) {
-        $path  = drupal_get_path('module', $module) . '/templates';
-        $theme_registry += drupal_find_theme_templates($theme_registry, '.tpl.php', $path);
+    $glacier_system_directory = drupal_get_path('module', 'glacier_system');
+    $glacier_features_directory = $glacier_system_directory . '/features';
+    $glacier_features_paths = array_filter(glob($glacier_features_directory . '/*'), 'is_dir');
+    foreach ($glacier_features_paths as $path) {
+      $template_path = $path . '/templates';
+      if (is_dir($template_path)) {
+        $theme_registry += drupal_find_theme_templates($theme_registry, '.tpl.php', $template_path);
       }
     }
   }
@@ -42,9 +44,4 @@ function glacier_system_form_field_ui_display_overview_form_alter(&$form, &$form
     unset($form['fields']['title']);
     unset($form['#ds_fields'][0]);
   }
-}
-
-function _glacier_system_starts_with($haystack, $needle) {
-  $length = strlen($needle);
-  return (substr($haystack, 0, $length) === $needle);
 }
