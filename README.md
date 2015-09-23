@@ -1,4 +1,4 @@
-# glacier_system
+# System
 The glacier_system feature is the basis for a wide variety of features which make site building with Drupal faster an easier. The glacier_system features are built with the glacier base theme in mind.
 
 ## Extend
