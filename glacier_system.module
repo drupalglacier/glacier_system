@@ -14,7 +14,8 @@ include_once 'glacier_system.features.inc';
 function glacier_system_theme_registry_alter(&$theme_registry) {
   if (!path_is_admin(current_path())) {
     $glacier_system_directory = drupal_get_path('module', 'glacier_system');
-    // All features that extend glacier must be placed inside the "features" directory.
+    // All features that extend glacier must be
+    // placed inside the "features" directory.
     $glacier_features_directory = $glacier_system_directory . '/features';
     // Get all features from the features directory.
     $glacier_features_paths = array_filter(glob($glacier_features_directory . '/*'), 'is_dir');
@@ -40,7 +41,8 @@ function glacier_system_theme_registry_alter(&$theme_registry) {
 function glacier_system_form_field_ui_display_overview_form_alter(&$form, &$form_state, $form_id) {
   if (isset($form['additional_settings']) && isset($form['additional_settings']['ds_layouts'])) {
     foreach ($form['additional_settings']['ds_layouts']['layout']['#options'] as $key => $option) {
-      // Remove "fluid" display suite layouts, with glacier every layout is fluid.
+      // Remove "fluid" display suite layouts,
+      // with glacier every layout is fluid.
       if (strpos($key, 'fluid') !== FALSE) {
         unset($form['additional_settings']['ds_layouts']['layout']['#options'][$key]);
       }

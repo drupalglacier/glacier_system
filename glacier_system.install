@@ -1,5 +1,12 @@
 <?php
+/**
+ * @file
+ * System feature insatll logic.
+ */
 
+/**
+ * Implements hook_install().
+ */
 function glacier_system_install() {
   db_update('system')
     ->fields(array('weight' => 1000))
