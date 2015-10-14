@@ -8,7 +8,7 @@ Features that extend the glacier system must be placed in the „features“
 directory inside the glacier_system module.
 
 ## About
-Github: https://github.com/maoberlehnerdrupal/glacier_system
+Github: https://github.com/drupalglacier/glacier_system
 
 ### Author
 Markus Oberlehner  
