@@ -2,7 +2,7 @@ api = 2
 
 ; Core
 core = 7.x
-projects[drupal][version] = 7.x
+projects[] = drupal
 
 ; Performance patches (according to https://groups.drupal.org/node/210683).
 projects[drupal][patch][] = https://www.drupal.org/files/issues/drupal-1443308-49-module_load_include-static-cache.patch
@@ -105,3 +105,8 @@ libraries[select2][download][type] = get
 libraries[select2][download][url] = https://github.com/select2/select2/archive/4.0.0.tar.gz
 libraries[select2][directory_name] = select2
 libraries[select2][type] = library
+
+
+
+; Translations
+; translations[] = de
