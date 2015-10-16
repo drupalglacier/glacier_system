@@ -25,7 +25,7 @@ projects[glacier][type] = theme
 
 ; Modules
 projects[addanother][subdir] = contrib
-projects[addanother][subdir] = adminimal_admin_menu
+projects[adminimal_admin_menu][subdir] = contrib
 projects[admin_menu][subdir] = contrib
 projects[advagg][subdir] = contrib
 projects[bean][subdir] = contrib
