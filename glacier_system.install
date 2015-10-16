@@ -15,7 +15,7 @@ function glacier_system_install() {
 }
 
 /**
- * Demo hook update implementation.
+ * Demo update hook implementation.
  *
  * You can use this module as your main "deployment helper" module.
  *
