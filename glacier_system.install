@@ -22,120 +22,177 @@ function glacier_system_install() {
  * Implements hook_update_N().
  */
 // function glacier_system_update_7000(&$sandbox) {
-//   $modules = array(
-//     'addanother',
-//     'admin_menu',
-//     'adminimal_admin_menu',
-//     'advagg',
-//     'advagg_bundler',
-//     'advagg_css_compress',
-//     'advagg_js_compress',
-//     'advagg_mod',
-//     'bean',
-//     'bean_admin_ui',
-//     'bean_uuid',
-//     'better_exposed_filters',
-//     'better_formats',
-//     'block',
-//     'block_class',
-//     'blockify',
-//     'bower_manager',
-//     'clientside_validation',
-//     'clientside_validation_form',
-//     'clientside_validation_ife',
-//     'colorbox',
-//     'ctools',
-//     'date',
-//     'date_api',
-//     'dblog',
-//     'devel',
-//     'draggableviews',
-//     'ds',
-//     'ds_forms',
-//     'ds_ui',
-//     'email',
-//     'entity',
-//     'entity_translation',
-//     'entityreference',
-//     'features',
-//     'fences',
-//     'fences_display_specific_wrapper',
-//     'field',
-//     'field_group',
-//     'field_sql_storage',
-//     'field_ui',
-//     'file',
-//     'file_entity',
-//     'filter',
-//     'focal_point',
-//     'formatter_field',
-//     'formatter_field_preset',
-//     'glacier_system',
-//     'globalredirect',
-//     'i18n',
-//     'i18n_block',
-//     'i18n_field',
-//     'i18n_menu',
-//     'i18n_node',
-//     'i18n_path',
-//     'i18n_select',
-//     'i18n_string',
-//     'i18n_translation',
-//     'i18n_variable',
-//     'i18nviews',
-//     'ife',
-//     'image',
-//     'image_progressive_effect',
-//     'jquery_update',
-//     'l10n_update',
-//     'libraries',
-//     'link',
-//     'list',
-//     'locale',
-//     'locale_auto_import',
-//     'magic',
-//     'media',
-//     'menu',
-//     'metatag',
-//     'metatag_views',
-//     'minify',
-//     'module_filter',
-//     'node',
-//     'number',
-//     'options',
-//     'paragraphs',
-//     'path',
-//     'pathauto',
-//     'rabbit_hole',
-//     'rh_node',
-//     'rh_taxonomy',
-//     'search_krumo',
-//     'select2',
-//     'smart_trim',
-//     'strongarm',
-//     'system',
-//     'taxonomy',
-//     'text',
-//     'title',
-//     'token',
-//     'translation',
-//     'transliteration',
-//     'update',
-//     'user',
-//     'uuid',
-//     'uuid_features',
-//     'uuid_path',
-//     'variable',
-//     'variable_realm',
-//     'variable_store',
-//     'views',
-//     'views_bulk_operations',
-//     'views_ui',
-//     'xmlsitemap',
-//     'xmlsitemap_i18n',
-//     'xmlsitemap_menu',
-//     'xmlsitemap_node',
-//     'xmlsitemap_taxonomy',
-//   );
+//   $modules = array();
+
+//   // Administration.
+//   $modules[] = 'admin_menu';
+//   $modules[] = 'adminimal_admin_menu';
+//   $modules[] = 'locale_auto_import';
+//   $modules[] = 'module_filter';
+
+//   // Advanced CSS/JS Aggregation.
+//   $modules[] = 'advagg';
+//   $modules[] = 'advagg_bundler';
+//   $modules[] = 'advagg_css_compress';
+//   $modules[] = 'advagg_js_compress';
+//   $modules[] = 'advagg_mod';
+
+//   // Bean.
+//   $modules[] = 'bean';
+//   $modules[] = 'bean_admin_ui';
+//   $modules[] = 'bean_uuid';
+
+//   // Chaos tool suite.
+//   $modules[] = 'ctools';
+
+//   // Clientside Validation.
+//   $modules[] = 'clientside_validation';
+//   $modules[] = 'clientside_validation_form';
+//   $modules[] = 'clientside_validation_ife';
+
+//   // Core.
+//   $modules[] = 'block';
+//   $modules[] = 'dblog';
+//   $modules[] = 'field';
+//   $modules[] = 'field_sql_storage';
+//   $modules[] = 'field_ui';
+//   $modules[] = 'file';
+//   $modules[] = 'filter';
+//   $modules[] = 'image';
+//   $modules[] = 'list';
+//   $modules[] = 'locale';
+//   $modules[] = 'menu';
+//   $modules[] = 'node';
+//   $modules[] = 'number';
+//   $modules[] = 'options';
+//   $modules[] = 'path';
+//   $modules[] = 'system';
+//   $modules[] = 'taxonomy';
+//   $modules[] = 'text';
+//   $modules[] = 'translation';
+//   $modules[] = 'update';
+//   $modules[] = 'user';
+
+//   // Date/Time.
+//   $modules[] = 'date';
+//   $modules[] = 'date_api';
+
+//   // Development.
+//   $modules[] = 'devel';
+//   $modules[] = 'search_krumo';
+
+//   // Display Suite.
+//   $modules[] = 'ds';
+//   $modules[] = 'ds_forms';
+//   $modules[] = 'ds_ui';
+
+//   // Features.
+//   $modules[] = 'features';
+//   $modules[] = 'uuid_features';
+
+//   // Fields.
+//   $modules[] = 'email';
+//   $modules[] = 'entityreference';
+//   $modules[] = 'fences';
+//   $modules[] = 'fences_display_specific_wrapper';
+//   $modules[] = 'field_group';
+//   $modules[] = 'link';
+//   $modules[] = 'smart_trim';
+//   $modules[] = 'title';
+
+//   // Frontend.
+//   $modules[] = 'magic';
+
+//   // glacier.
+//   $modules[] = 'glacier_system';
+
+//   // Media.
+//   $modules[] = 'file_entity';
+//   $modules[] = 'media';
+//   $modules[] = 'image_progressive_effect';
+
+//   // Multilingual.
+//   $modules[] = 'l10n_update';
+
+//   // Multilingual - Entity Translation.
+//   $modules[] = 'entity_translation';
+
+//   // Multilingual - Internationalization.
+//   $modules[] = 'i18n';
+//   $modules[] = 'i18n_block';
+//   $modules[] = 'i18n_field';
+//   $modules[] = 'i18n_menu';
+//   $modules[] = 'i18n_node';
+//   $modules[] = 'i18n_path';
+//   $modules[] = 'i18n_select';
+//   $modules[] = 'i18n_string';
+//   $modules[] = 'i18n_translation';
+//   $modules[] = 'i18n_variable';
+//   $modules[] = 'i18nviews';
+
+//   // Other.
+//   $modules[] = 'addanother';
+//   $modules[] = 'better_formats';
+//   $modules[] = 'block_class';
+//   $modules[] = 'blockify';
+//   $modules[] = 'bower_manager';
+//   $modules[] = 'colorbox';
+//   $modules[] = 'entity';
+//   $modules[] = 'field_formatter_settings';
+//   $modules[] = 'focal_point';
+//   $modules[] = 'formatter_field';
+//   $modules[] = 'formatter_field_preset';
+//   $modules[] = 'libraries';
+//   $modules[] = 'multiform';
+//   $modules[] = 'pathauto';
+//   $modules[] = 'rabbit_hole';
+//   $modules[] = 'rh_node';
+//   $modules[] = 'rh_taxonomy';
+//   $modules[] = 'strongarm';
+//   $modules[] = 'token';
+//   $modules[] = 'transliteration';
+
+//   // Paragraphs.
+//   $modules[] = 'paragraphs';
+
+//   // Path management.
+//   $modules[] = 'globalredirect';
+
+//   // Performance and scalability.
+//   $modules[] = 'minify';
+
+//   // SEO.
+//   $modules[] = 'metatag';
+//   $modules[] = 'metatag_views';
+
+//   // UUID.
+//   $modules[] = 'uuid';
+//   $modules[] = 'uuid_path';
+
+//   // User interface.
+//   $modules[] = 'ife';
+//   $modules[] = 'jquery_update';
+//   $modules[] = 'select2';
+
+//   // Variable.
+//   $modules[] = 'variable';
+//   $modules[] = 'variable_realm';
+//   $modules[] = 'variable_store';
+
+//   // Views.
+//   $modules[] = 'better_exposed_filters';
+//   $modules[] = 'draggableviews';
+//   $modules[] = 'views';
+//   $modules[] = 'views_bulk_operations';
+//   $modules[] = 'views_tree';
+//   $modules[] = 'views_ui';
+
+//   // XML sitemap.
+//   $modules[] = 'xmlsitemap';
+//   $modules[] = 'xmlsitemap_i18n';
+//   $modules[] = 'xmlsitemap_menu';
+//   $modules[] = 'xmlsitemap_node';
+//   $modules[] = 'xmlsitemap_taxonomy';
+
 //   module_enable($modules, TRUE);
 // }
