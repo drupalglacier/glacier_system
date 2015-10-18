@@ -195,4 +195,168 @@ function glacier_system_install() {
 //   $modules[] = 'xmlsitemap_taxonomy';
 
 //   module_enable($modules, TRUE);
+
+//   // Variables.
+//   // Colorbox.
+//   variable_set('colorbox_custom_settings_activate', TRUE);
+//   variable_set('colorbox_maxheight', '90%');
+//   variable_set('colorbox_maxwidth', '90%');
+
+//   // Date.
+//   variable_set('date_first_day', 1);
+//   variable_set('date_format_long', 'l, j. F Y - G:i');
+//   variable_set('date_format_medium', 'j. F Y - G:i');
+//   variable_set('date_format_short', 'd.m.Y - H:i');
+
+//   // Fences.
+//   variable_set('fences_default_markup', TRUE);
+//   variable_set('fences_default_classes', TRUE);
+
+//   // Global Redirect.
+//   variable_set('globalredirect_settings', array('language_redirect' => TRUE));
+
+//   // Image.
+//   variable_set('image_jpeg_quality', 80);
+//   variable_set('image_style_quality_global_quality', 80);
+
+//   // Internationalization.
+//   variable_set('i18n_hide_translation_links', TRUE);
+//   variable_set('language_negotiation_language', array(
+//     'locale-url' => array(
+//       'callbacks' => array(
+//         'language' => 'locale_language_from_url',
+//         'switcher' => 'locale_language_switcher_url',
+//         'url_rewrite' => 'locale_language_url_rewrite_url',
+//       ),
+//       'file' => 'includes/locale.inc',
+//     ),
+//     'locale-session' => array(
+//       'callbacks' => array(
+//         'language' => 'locale_language_from_session',
+//         'switcher' => 'locale_language_switcher_session',
+//         'url_rewrite' => 'locale_language_url_rewrite_session',
+//       ),
+//       'file' => 'includes/locale.inc',
+//     ),
+//     'locale-user' => array(
+//       'callbacks' => array(
+//         'language' => 'locale_language_from_user',
+//       ),
+//       'file' => 'includes/locale.inc',
+//     ),
+//     'locale-browser' => array(
+//       'callbacks' => array(
+//         'language' => 'locale_language_from_browser',
+//       ),
+//       'file' => 'includes/locale.inc',
+//       'cache' => FALSE,
+//     ),
+//     'language-default' => array(
+//       'callbacks' => array(
+//         'language' => 'language_from_default',
+//       ),
+//     ),
+//   ));
+//   variable_set('language_negotiation_language_content', array(
+//     'locale-url' => array(
+//       'callbacks' => array(
+//         'language' => 'locale_language_from_url',
+//         'switcher' => 'locale_language_switcher_url',
+//         'url_rewrite' => 'locale_language_url_rewrite_url',
+//       ),
+//       'file' => 'includes/locale.inc',
+//     ),
+//     'locale-session' => array(
+//       'callbacks' => array(
+//         'language' => 'locale_language_from_session',
+//         'switcher' => 'locale_language_switcher_session',
+//         'url_rewrite' => 'locale_language_url_rewrite_session',
+//       ),
+//       'file' => 'includes/locale.inc',
+//     ),
+//     'locale-user' => array(
+//       'callbacks' => array(
+//         'language' => 'locale_language_from_user',
+//       ),
+//       'file' => 'includes/locale.inc',
+//     ),
+//     'locale-browser' => array(
+//       'callbacks' => array(
+//         'language' => 'locale_language_from_browser',
+//       ),
+//       'file' => 'includes/locale.inc',
+//       'cache' => FALSE,
+//     ),
+//     'locale-interface' => array(
+//       'callbacks' => array(
+//         'language' => 'locale_language_from_interface',
+//       ),
+//       'file' => 'includes/locale.inc',
+//     ),
+//     'language-default' => array(
+//       'callbacks' => array(
+//         'language' => 'language_from_default',
+//       ),
+//     ),
+//   ));
+
+//   // Metatag.
+//   variable_set('default_metatag_config', array('global:frontpage' => TRUE));
+
+//   // Node.
+//   variable_set('node_admin_theme', TRUE);
+
+//   // Pathauto.
+//   variable_set('pathauto_node_pattern', '[node:title]');
+//   variable_set('pathauto_taxonomy_term_pattern', '[term:vocabulary]/[term:name]');
+//   variable_set('pathauto_user_pattern', 'users/[user:name]');
+//   variable_set('pathauto_transliterate', TRUE);
+
+//   // Select 2.
+//   variable_set('select2_compression_type', 'minified');
+//   variable_set('select2_min_options_count_for_search', 2);
+//   variable_set('select2_use_for_all_select_elements', TRUE);
+//   variable_set('select2_use_for_all_select_elements_for_admin_pages', TRUE);
+
+//   // Title.
+//   variable_set('title_bean', array(
+//     'auto_attach' => array('title' => 'title'),
+//     'hide_label' => array(
+//       'page' => 'page',
+//       'entity' => 'entity',
+//     ),
+//   ));
+//   variable_set('title_file', array(
+//     'auto_attach' => array('filename' => 'filename'),
+//     'hide_label' => array(
+//       'page' => 'page',
+//       'entity' => 'entity',
+//     ),
+//   ));
+//   variable_set('title_node', array(
+//     'auto_attach' => array('title' => 'title'),
+//     'hide_label' => array(
+//       'page' => 'page',
+//       'entity' => 'entity',
+//     ),
+//   ));
+//   variable_set('title_taxonomy_term', array(
+//     'auto_attach' => array(
+//       'name' => 'name',
+//       'description' => 'description',
+//     ),
+//     'hide_label' => array(
+//       'page' => 'page',
+//       'entity' => 'entity',
+//     ),
+//   ));
+
+//   // User.
+//   variable_set('user_register', FALSE);
+
+//   // jQuery Update.
+//   variable_set('jquery_update_compression_type', 'min');
+//   variable_set('jquery_update_jquery_admin_version', '1.8');
+//   variable_set('jquery_update_jquery_cdn', 'none');
+//   variable_set('jquery_update_jquery_version', '1.11');
 // }
