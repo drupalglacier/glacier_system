@@ -108,6 +108,8 @@ projects[paragraphs][subdir] = contrib
 projects[globalredirect][subdir] = contrib
 
 ; Performance and scalability
+projects[apdqc][subdir] = contrib
+projects[apdqc][version] = 1.x-dev
 projects[minify][subdir] = contrib
 
 ; SEO

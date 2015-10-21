@@ -159,6 +159,9 @@ function glacier_system_install() {
 //   $modules[] = 'globalredirect';
 
 //   // Performance and scalability.
+//   // Follow the instructions (https://www.drupal.org/project/apdqc)
+//   // before enabling the "apdqc" module.
+//   // $modules[] = 'apdqc';
 //   $modules[] = 'minify';
 
 //   // SEO.
