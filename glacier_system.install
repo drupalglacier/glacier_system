@@ -230,7 +230,6 @@ function glacier_system_install() {
 //   variable_set('advagg_mod_js_adjust_sort_browsers', TRUE);
 //   variable_set('advagg_mod_js_adjust_sort_external', TRUE);
 //   variable_set('advagg_mod_js_adjust_sort_inline', TRUE);
-//   variable_set('advagg_mod_js_defer', 2);
 //   variable_set('advagg_mod_js_defer_inline_alter', TRUE);
 //   variable_set('advagg_mod_js_footer', 3);
 //   variable_set('advagg_mod_js_footer_inline_alter', TRUE);
