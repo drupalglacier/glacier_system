@@ -199,7 +199,12 @@ function glacier_system_install() {
 
 //   module_enable($modules, TRUE);
 
+//   theme_enable(array('adminimal_theme'));
+
 //   // Variables.
+//   // Admin.
+//   variable_set('admin_theme', 'adminimal_theme');
+
 //   // AdvAgg.
 //   variable_set('advagg_ajax_render_alter', TRUE);
 //   variable_set('advagg_browser_dns_prefetch', TRUE);
