@@ -144,12 +144,12 @@ projects[xmlsitemap][subdir] = contrib
 projects[bower_manager][download][type] = get
 projects[bower_manager][download][url] = https://github.com/maoberlehnerdrupal/bower_manager/archive/7.x-1.x-dev.zip
 projects[bower_manager][type] = module
-projects[bower_manager][subdir] = contrib
+projects[bower_manager][subdir] = custom
 
 projects[fences_display_specific_wrapper][download][type] = get
 projects[fences_display_specific_wrapper][download][url] = https://github.com/maoberlehnerdrupal/fences_display_specific_wrapper/archive/7.x-1.x-dev.zip
 projects[fences_display_specific_wrapper][type] = module
-projects[fences_display_specific_wrapper][subdir] = contrib
+projects[fences_display_specific_wrapper][subdir] = custom
 
 projects[glacier_system][download][type] = get
 projects[glacier_system][download][url] = https://github.com/drupalglacier/glacier_system/archive/7.x-1.x-dev.zip
@@ -159,7 +159,7 @@ projects[glacier_system][subdir] = custom
 projects[image_progressive_effect][download][type] = get
 projects[image_progressive_effect][download][url] = https://github.com/maoberlehnerdrupal/image_progressive_effect/archive/7.x-1.x-dev.zip
 projects[image_progressive_effect][type] = module
-projects[image_progressive_effect][subdir] = contrib
+projects[image_progressive_effect][subdir] = custom
 
 
 
