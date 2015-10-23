@@ -239,6 +239,19 @@ function glacier_system_install() {
 //   variable_set('advagg_mod_js_preprocess', TRUE);
 //   variable_set('advagg_mod_js_remove_unused', TRUE);
 
+//   // Blockify.
+//   variable_set('blockify_blocks', array(
+//     'blockify-logo' => 'blockify-logo',
+//     'blockify-site-name' => 'blockify-site-name',
+//     'blockify-site-slogan' => 'blockify-site-slogan',
+//     'blockify-page-title' => 'blockify-page-title',
+//     'blockify-breadcrumb' => 'blockify-breadcrumb',
+//     'blockify-tabs' => 'blockify-tabs',
+//     'blockify-messages' => 'blockify-messages',
+//     'blockify-actions' => 'blockify-actions',
+//     'blockify-feed-icons' => 'blockify-feed-icons',
+//   ));
+
 //   // Colorbox.
 //   variable_set('colorbox_custom_settings_activate', TRUE);
 //   variable_set('colorbox_maxheight', '90%');
