@@ -411,7 +411,7 @@ function glacier_system_install() {
 //     'style_checkboxes' => 1,
 //     'display_icons_config' => 1,
 //     'rounded_buttons' => 0,
-//     'sticky_actions' => 1,
+//     'sticky_actions' => 0,
 //     'avoid_custom_font' => 0,
 //     'adminimal_theme_skin' => 'alternative',
 //   ));
