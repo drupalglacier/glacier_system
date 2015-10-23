@@ -21,7 +21,7 @@ function glacier_system_install() {
  *
  * Implements hook_update_N().
  */
-// function glacier_system_update_7000(&$sandbox) {
+// function glacier_system_update_7100(&$sandbox) {
 //   $modules = array();
 
 //   // Administration.
