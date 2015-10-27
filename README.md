@@ -2,24 +2,12 @@
 The glacier System module is the basis for a wide variety of features which
 make site building with Drupal faster an easier.
 
+## Installation
+You must install the module inside a subdirectory of your modules folder (e.g. `sites/all/modules/features`).
+
 ## Extend
 You can find compatible features on [Github](https://github.com/drupalglacier).  
-Features that extend the glacier system must be placed in the `features`
-directory inside the glacier_system module.
-
-## Installation
-- Install the module [as usual](https://www.drupal.org/documentation/install/modules-themes/modules-7)
-- Uncomment the update hook 7100 in `glacier_system.install`
-- Modify the the list of modules to be enabled as desired
-- Modify the settings as desired
-- run `drush updatedb`
-
-## Deployment
-This module serves as the basis for the implementation of a stable deployment
-workflow. In the `glacier_system.install` file you can find a basic update hook
-that can serve as a basis for installing and configuring a Drupal system. You
-can use the `glacier_system.install` file as a starting point for your
-deployment workflow.
+Features that extend the glacier System must be placed in the same directory as the glacier System module itself (usually `sites/all/modules/features`).
 
 ## About
 Github: https://github.com/drupalglacier/glacier_system
