@@ -13,10 +13,9 @@ include_once 'glacier_system.features.inc';
  */
 function glacier_system_theme_registry_alter(&$theme_registry) {
   if (!path_is_admin(current_path())) {
-    $glacier_system_directory = drupal_get_path('module', 'glacier_system');
     // All features that extend glacier must be placed inside
     // the subdirectory where glacier_system itself is installed.
-    $glacier_subdirectory = dirname($glacier_system_directory);
+    $glacier_subdirectory = dirname(__DIR__);
     // Get all features from the subdirectory.
     $glacier_features_paths = array_filter(glob($glacier_subdirectory . '/*'), 'is_dir');
     foreach ($glacier_features_paths as $path) {
