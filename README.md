@@ -1,4 +1,4 @@
-# glacier System
+# glacier System (DEPRECATED!)
 The glacier System module is the basis for a wide variety of features which
 make site building with Drupal faster an easier.
 
